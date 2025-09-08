@@ -1,11 +1,15 @@
-import { Keyboard, Gamepad2 } from 'lucide-react';
-
 export default function Controls() {
   return (
-    <div className="flex items-center gap-3 text-slate-300 bg-slate-800/60 ring-1 ring-white/10 px-3 py-2 rounded-lg">
-      <Keyboard className="w-4 h-4" />
-      <div className="text-sm">Arrows or WASD to move, Space to jump</div>
-      <Gamepad2 className="w-4 h-4 opacity-70" />
+    <div className="rounded-xl border border-white/10 bg-white/5 p-5 shadow-lg backdrop-blur">
+      <h3 className="mb-3 text-lg font-semibold">Controls</h3>
+      <ul className="space-y-2 text-neutral-300">
+        <li>Move: Left/Right Arrows or A/D</li>
+        <li>Jump: Space or W/Up Arrow</li>
+        <li>Reset Level: R</li>
+      </ul>
+      <p className="mt-4 text-sm text-neutral-400">
+        Tip: Try collecting all coins. Watch out for gaps!
+      </p>
     </div>
   );
 }
